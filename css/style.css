@@ -1,0 +1,22 @@
+body {
+  padding-top: 50px;
+  background: rgb(200, 200, 200);;
+}
+
+div {
+  display: block;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.right {
+  position: absolute;
+  right: 2%;
+}
+
+.unity-render {
+  height: 300px;
+}
