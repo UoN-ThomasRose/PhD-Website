@@ -27,6 +27,10 @@ button {
 
 
 /* NAVBAR STYLES */
+#my-navbar-brand:hover {
+  color: #9d9d9d;
+}
+
 #my-navbar-buttons>li>a:hover {
   background: #73AD21;
 }
