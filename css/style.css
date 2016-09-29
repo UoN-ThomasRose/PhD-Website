@@ -1,3 +1,4 @@
+/* BASIC ELEMENT STYLES */
 body {
   padding-top: 50px;
   background: rgb(200, 200, 200);;
@@ -12,11 +13,62 @@ img {
   height: auto;
 }
 
-.right {
-  position: absolute;
-  right: 2%;
+canvas {
+	margin: 20px 20px 20px 20px;
+}
+
+td {
+  padding-top: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+
+/* NAVBAR STYLES */
+#my-navbar-buttons>li>a:hover {
+  background: #73AD21;
+}
+
+#my-navbar-buttons>.active>a:hover {
+  background: #000000;
+}
+
+.navbar-nav {
+  float: right;
 }
 
 .unity-render {
   height: 300px;
+  padding: 20px;
+}
+
+/* NOISE GENERATOR STYLES */
+#options {
+	/* Positioning */
+	float: right;
+	top: 50px;
+	right: 0px;
+	margin: 20px 20px 20px 20px;
+	z-index: 1;
+
+	/* Dimensions */
+	width: 350px;
+	height: 300px;
+
+	/* Aesthetics */
+	background-color: #ffffff;
+	border: 2px solid #73AD21;
+	border-radius: 10px;
+}
+
+#inner-div {
+	padding: 10px 10px 10px 10px;
+}
+
+/* CONTACT PAGE STYLES */
+#contact-details {
+  list-style: none;
+  padding-left: 0px;
 }

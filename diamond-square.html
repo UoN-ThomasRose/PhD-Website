@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="js/diamond-square/diamond-square.js"></script>
+	  <script src="js/diamond-square/chance.js"></script>
+    <title>Procedural Terrain Generation</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Procedural Terrain Generation</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse right">
+          <ul id="my-navbar-buttons" class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="diamond-square.html">Diamond-Square Generator</a></li>
+            <li><a href="worley.html">Worley Noise Generator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main Body -->
+    <div class="container">
+      <canvas id="web_canvas" width="1" height="1"></canvas>
+    	<div id="options">
+    		<div id="inner-div">
+    			<h3>Diamond-Square Algorithm</h3>
+    			<table>
+    			<tr>
+    				<td><label>Seed: </label></td>
+    				<td><textarea id="seed_option" rows="1" cols="10" maxlength="8">12345678</textarea></td>
+    			</tr>
+    			<tr>
+    			<tr>
+    				<td><label>Dimensions (W x H): </label></td>
+    				<td><select name="dimension" id="dimension_option">
+    					<option value="8">8</option>
+    					<option value="64">64</option>
+    					<option value="128">128</option>
+    					<option value="256">256</option>
+    					<option value="512" selected="selected">512</option>
+    				</select></td>
+    			</tr>
+    			<tr>
+    				<td><label>Roughness: </label></td>
+    				<td><select name="roughness" id="roughness_option">
+    					<option value="10">10</option>
+    					<option value="20">20</option>
+    					<option value="30">30</option>
+    					<option value="40">40</option>
+    					<option value="50"selected="selected">50</option>
+    					<option value="60">60</option>
+    					<option value="70">70</option>
+    					<option value="80">80</option>
+    					<option value="90">90</option>
+    					<option value="100">100</option>
+    				</select></td>
+    			</tr>
+    			<tr>
+    				<td><label>Rendering Colours: </label></td>
+    				<td><select name="render" id="render_option">
+    					<option value="Grayscale">Grayscale</option>
+    					<option value="RedBlue">Red and Blue</option>
+    					<option value="Brown">Brown</option>
+    				</select></td>
+    			</tr>
+    			</table>
+    			<button type="button" onclick="generateHeightmap()">Generate Heightmap</button>
+    		</div>
+    	</div>
+    </div>
+  </body>
+  <footer>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"/>
+  </footer>
+</html>
