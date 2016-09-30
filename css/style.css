@@ -27,22 +27,27 @@ button {
 
 
 /* NAVBAR STYLES */
+#my-navbar-buttons>li>a {
+  color: #ffffff;
+}
 #my-navbar-buttons>li>a:hover {
   background: #73AD21;
+  color: #ffffff;
 }
-
-#my-navbar-buttons>.active>a:hover {
-  background: #000000;
+#my-navbar-buttons>li>.active {
+  background: #000000 !important;
 }
-
 .navbar-nav {
   float: right;
 }
 
+
+/* GENERAL STYLES */
 .unity-render {
   height: 300px;
   padding: 20px;
 }
+
 
 /* NOISE GENERATOR STYLES */
 #options {
@@ -66,6 +71,7 @@ button {
 #inner-div {
 	padding: 10px 10px 10px 10px;
 }
+
 
 /* CONTACT PAGE STYLES */
 #contact-details {

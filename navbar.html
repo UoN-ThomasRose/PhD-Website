@@ -20,3 +20,10 @@
     </div><!--/.nav-collapse -->
   </div>
 </nav>
+
+<script>
+  var ap = window.location.pathname.substring(1);
+  //alert(ap);
+  var apLink = document.querySelectorAll("a[href='"+ ap +"']");
+  apLink[0].className += "active";
+</script>
