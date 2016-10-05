@@ -1,7 +1,7 @@
 /* BASIC ELEMENT STYLES */
 body {
   padding-top: 50px;
-  background: rgb(200, 200, 200);;
+  background: rgb(200, 200, 200);
 }
 
 div {
@@ -39,6 +39,9 @@ button {
 }
 .navbar-nav {
   float: right;
+}
+.navbar-brand {
+  color: #ffffff !important;
 }
 
 
